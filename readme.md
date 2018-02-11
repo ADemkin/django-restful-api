@@ -3,8 +3,6 @@ Django RESTful Api Example
 In this example i followed [this](https://simpleisbetterthancomplex.com/tutorial/2018/02/03/how-to-use-restful-apis-with-django.html)
 tutorial, but i did many things on my own and in my way. I think my version is much cleaner and easier to read. Also i worked a lot with all possible errors, so server should run smoothly.
 
-Anton Demkin, 2018
-antondemkin@yandex.ru
 
 # How to install
 
@@ -69,3 +67,7 @@ This is educational project. I learned how to use restful api's with django temp
 ![geo](https://github.com/ADemkin/django-restful-api/blob/master/screenshots/geo.png)
 ![github](https://github.com/ADemkin/django-restful-api/blob/master/screenshots/github.png)
 ![oxford](https://github.com/ADemkin/django-restful-api/blob/master/screenshots/oxford.png)
+
+&copy; Anton Demkin, 2018
+
+antondemkin@yandex.ru
