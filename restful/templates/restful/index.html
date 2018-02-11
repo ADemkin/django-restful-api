@@ -1,0 +1,21 @@
+{% extends 'restful/main.html' %}
+
+{% block title %}index{% endblock %}
+
+{% block content %}
+
+<div class="container">
+	<div class="jumbotron">
+		<h1 class="display-1">Welcome!</h1>
+		<p class="lead">Here are some awesome examples how restful api can be used in Django 2.0:</p>
+		<a class="nav-link" href="{% url 'geo' %}">Usage of freegeoip.net API and Google Maps API</a>
+		<a class="nav-link" href="{% url 'github' %}">Usage of GitHub API and GET response headers</a>
+		<a class="nav-link" href="{% url 'dictionary' %}">Usage of Oxford Dictionary API</a>
+		<br>
+		<p class="ont-weight-light">Also, session cache gets cleared every time you visit this page.</p>
+		<p class="ont-weight-light">It may be useful for comparing cached vs non-cached load time in <a
+				href="{% url 'geo' %}">freegeoip</a> example.</p>
+	</div>
+</div>
+
+{% endblock %}

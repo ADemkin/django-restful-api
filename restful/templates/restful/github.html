@@ -1,0 +1,44 @@
+{% extends 'restful/main.html' %}
+
+{% block title %}GitHub API{% endblock %}
+
+{% block githubactive %}active{% endblock %}
+
+{% block content %}
+
+<div class="container">
+	<div class="jumbotron">
+		<h1 class="display-3">GitHub API</h1>
+		<p class="lead">github.com</p>
+		<hr class="my-4">
+		<form>
+			<div class="form-group">
+				<input type="text" class="form-control col-sm-6" name="username" placeholder="GitHub Username">
+				<button type="submit" class="btn btn-primary mt-4">Get info on user</button>
+			</div>
+		</form>
+		{% if user %}
+			{% if user.name %}
+			<hr class="my-4">
+			<p class="lead"><b>Real name:</b> {{ user.name }}</p>
+			<p class="lead"><b>Repositories:</b> {{ user.public_repos }}</p>
+			<p class="lead"><b>Followers:</b> {{ user.followers }}</p>
+			{% endif %}
+			{% if user.message %}
+			<hr class="my-4">
+			<p class="lead"><b>Error:</b> {{ user.message }}</p>
+			<p class="lead"><b>More info:</b> <a href="{{ user.documentation_url }}">{{ user.documentation_url }}</a></p>
+			{% endif %}
+		{% endif %}
+		{% if headers %}
+		<hr class="my-4">
+		<p class="lead"><b>Allowed reqests:</b> {{ headers.remain }} / {{ headers.limit }}</p>
+		{% if headers.unban_time %}
+		<p class="lead"><b>Unban time:</b> {{ headers.unban_time }}</p>
+		{% endif %}
+		{% endif %}
+	
+	</div>
+</div>
+
+{% endblock %}
