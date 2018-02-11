@@ -65,3 +65,7 @@ OXFORD_API_KEY = [oxford Application Keys]
 This is educational project. I learned how to use restful api's with django templates.
 
 #### Screenshots
+![index](https://github.com/ADemkin/django-restful-api/blob/master/screenshots/index.png)
+![geo](https://github.com/ADemkin/django-restful-api/blob/master/screenshots/geo.png)
+![github](https://github.com/ADemkin/django-restful-api/blob/master/screenshots/github.png)
+![oxford](https://github.com/ADemkin/django-restful-api/blob/master/screenshots/oxford.png)
