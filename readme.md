@@ -63,3 +63,5 @@ OXFORD_API_KEY = [oxford Application Keys]
 
 # Project goal
 This is educational project. I learned how to use restful api's with django templates.
+
+#### Screenshots
